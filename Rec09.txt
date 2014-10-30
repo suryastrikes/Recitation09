@@ -1,0 +1,31 @@
+Recitation 9
+
+Topics
+
+Copy Control (aka Big 3)
+operator[]
+Separate Compilation (if time permits)
+Recitation Project
+
+We provide you with some code to start with, rec09-orig.cpp.
+It provides the basic class definitions that we will need for modeling a directory of employees in a company.
+You will create class for a directory of entries. We've provided classes for Directory, Entry and Position.
+Some things have been left out that you will have add - these are indicated by comments.
+You'll be modifying the Directory class.
+
+Your job is to:
+
+Read and understand the given code.
+Implement the Big 3 (i.e., destructor, copy constructor and assignment operator) for the Directory class. At the beginning of each of these functions, add a print statement to show when you have entered them. This will help you understand when they are each being used.
+Overload Directory's output operator.
+Overload Directory's [] operator to allow looking up a person's phone number, by passing in their name.
+You should (as always) consider if there is any way to further expand the code in main() to test your new features.
+If time allows, place the Directory, Entry and Position classes in their own header and implementation files.
+Dynamic Array?
+Some might ask, "Why are we using a dynamic array of Position pointers for our Directory?" Sure, you are [much] more likely to use a vector or other container type (e.g. set), but this gives you a good exercise in copy control, which is the point of this exercise.
+
+You should think about how using a vector of pointers would change your approach.
+
+Separate Compilation
+If you have time, after you have gotten the code to work in rec09, add separate compilation.  As a first step just create a Directory header file and implementation file, holding all three classes, i.e. Position, Entry and Directory.  Get that to work.  If there is more time, split off the Position and Entry classes into their own header and implementation classes.
+
